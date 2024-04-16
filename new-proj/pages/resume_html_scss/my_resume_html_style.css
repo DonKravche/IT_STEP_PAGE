@@ -1,0 +1,86 @@
+body {
+  width: 100%;
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(230, 218, 207);
+}
+body .resume {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+body .experience_dowloanCV {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+body .experience_dowloanCV .download_cv_btn {
+  width: 150px;
+  height: 50px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+body .experience_dowloanCV .download_cv_btn:hover {
+  background-color: blueviolet;
+  color: white;
+}
+body .resumes {
+  margin: 20px;
+  padding: 20px;
+  width: 80%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: -11.31px 11.31px 17px 0px rgba(138, 131, 124, 0.23), 0 1px 4px rgba(0, 0, 0, 0.6);
+}
+body .resumes h3 {
+  color: rgb(0, 106, 255);
+  line-height: normal;
+  font-size: 18px;
+}
+body .resumes .spans {
+  padding: 0;
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+}
+body .resumes p {
+  line-height: 1.5em;
+  font-size: 17px;
+  color: rgb(0, 0, 0);
+}
+body .education {
+  margin: 20px;
+  padding: 20px;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+}
+body .list_of_skils {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+body .list_of_skils i {
+  color: rgb(0, 81, 255);
+}
+body .list_of_skils span {
+  font-size: 14px;
+  color: rgb(0, 0, 0);
+}
+
+@media (max-width: 400px) {
+  body .experience_dowloanCV {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=my_resume_html_style.css.map */

@@ -1,0 +1,202 @@
+
+.main_nav {
+    position: fixed;
+    z-index: 100000;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    padding: 50px;
+    background-color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+
+        h1 {
+            color: rgb(0, 0, 0);
+            line-height: 1em;
+            font-size: 15px;
+        }
+
+        span {
+            color: rgb(0, 0, 0);
+            line-height: 1.2em;
+            font-size: 12px;
+        }
+    }
+
+    .burger > .line {
+        width: 40px;
+        height: 4px;
+        margin-top: 3px;
+        background-color: aqua;
+        border-radius: 10px;
+    }
+
+    .burger_nav {
+        position: absolute; // ES ARIS MIZEZI MAGRAM SXVANAIRAD OWERFLOW AR GAMDIS
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(245, 236, 230);
+        display: none; /* Keep it hidden initially */
+
+        a {
+            color: rgb(0, 0, 0);
+            font-weight: bolder;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        ul {
+            padding-top: 250px;
+        }
+
+    }
+
+    .burger_nav li {
+        padding-top: 15px;
+        display: flex;
+        gap: 200px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    /* Show the burger navigation when the checkbox is checked */
+    .inp:checked + .burger_nav {
+        display: block;
+    }
+
+    .inp {
+        display: none;
+    }
+    
+}
+
+body {
+    width: 100%;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(230, 218, 207);
+
+    .contact {
+        padding-top: 50px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .contacts {
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 650px;
+        margin-bottom: 50px;
+
+        input {
+            padding: 10px 5px;
+            outline: 0; 
+            border-width: 0 0 2px; 
+            border-color: black;
+            background-color: transparent;
+        }
+
+        .name_surname {
+            display: flex;
+            width: 100%;
+            gap: 50px;
+
+            .first_name {
+                width: calc(50% - 25px);
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .last_name {
+                width: calc(50% - 25px);
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+
+        .email {
+            padding-top: 25px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .subject {
+            padding-top: 25px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .text_area {
+            padding-top: 25px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            textarea {
+                resize: none;
+                background-color: transparent;
+                border-width: 1px; 
+                padding: 10px 5px;
+                border-radius: 5px;
+                border-color: black;
+            }
+        }
+
+        .btn_send {
+            margin-top: 20px;
+            width: 100%;
+            max-width: 150px;
+            height: 50px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: 0.25s;
+        }
+
+        .btn_send:hover {
+            background-color: rebeccapurple;
+            color: white;
+        }
+    }
+}
+
+@media (max-width: 668px) {
+    body {
+        .contacts {
+            .name_surname {
+                gap: 30px;
+    
+                .first_name,
+                .last_name {
+                    width: calc(50% - 15px);
+                }
+            }
+        }
+    }
+}
